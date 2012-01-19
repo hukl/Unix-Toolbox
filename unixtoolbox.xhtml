@@ -2,9 +2,9 @@
 <!DOCTYPE html PUBLIC
  "-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN"
  "http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg-flat.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" 
+<html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:svg="http://www.w3.org/2000/svg" xml:lang="en">
-<head>                            
+<head>
   <title>Unix Toolbox</title>
   <link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AOBfLwBbX14AWxgYABg8RwC/g14AGBgYAL9OJAB8KhgAfHFeAOCDUgC/g0cAGCo7AOCDXgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcJCw4ODg4ODgUHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcLCgcHBwcHBwcHBwcHBwcHBwgOBQcHBwcHBwcHBwcHBwcHBAwNBwcHBwcHBwcHBwcHBwcJCwMHBwcHBwcHBwcHBwcCBg0HBwcHBwcHBwcHBwkLAwcHBwcHBwcHBwcHBwcMDQcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" />
   <meta name="author" content="Colin Barschel c@cb.vu" />
@@ -72,9 +72,9 @@ h2:before {
     content: counter(chapter) "." counter(section) " ";
 }
 /* Not implemented in browsers yet */
-a.xref:after { 
+a.xref:after {
     content: " " target-counter(attr(href, url), chapter) "."
-    target-counter(attr(href, url), section); 
+    target-counter(attr(href, url), section);
 }
 div.changestyle {
     padding-top: 1em;
@@ -86,7 +86,7 @@ div.changestyle {
     body {
         padding: 0;
         margin: 1em 13em 0em 1.5em;
-    }	
+    }
     html>body {
         margin: 1em 13em 0em 1.5em;
     }
@@ -96,7 +96,7 @@ div.changestyle {
     body>div.changestyle {
         position: fixed;
     }
-    div.menu { 
+    div.menu {
         position: absolute;
         z-index: 2;
         width: 10.7em; height: auto;
@@ -132,7 +132,7 @@ div.changestyle {
 /* Menu as TOC for print */
     body {
         font-size: 88%;
-    }	
+    }
     div.title {
         padding: 0.5em 0 2em 0;
     }
@@ -185,19 +185,19 @@ div.changestyle {
         content: leader(' . ') target-counter(attr(href), page);
     }
 /*
-a.xref:after { 
+a.xref:after {
     content: " [" target-counter(attr(href, url), chapter) "."
-    target-counter(attr(href, url), section) " page " 
-    target-counter(attr(href, url), page) "]"; 
+    target-counter(attr(href, url), section) " page "
+    target-counter(attr(href, url), page) "]";
 }
 */
-    a.xref:after { 
-        content: " (page " target-counter(attr(href, url), page) ")"; 
+    a.xref:after {
+        content: " (page " target-counter(attr(href, url), page) ")";
     }
-    a.xrefp:after { 
-        content: " (p"target-counter(attr(href, url), page)")"; 
+    a.xrefp:after {
+        content: " (p"target-counter(attr(href, url), page)")";
     }
-    h1, h2, h3, h4, h5 { 
+    h1, h2, h3, h4, h5 {
         page-break-after: avoid;
     }
     div.footerfirst, div.footerlast {
@@ -295,7 +295,7 @@ h3, h4, div.title, h2, a:link, a:visited, .cmt {
 pre {
     background-color: #F6F6FC;
 }
-pre, code { 
+pre, code {
     color: #003300;
 }
 a:hover, .pp {
@@ -310,7 +310,7 @@ a:active {
 }
 @media print {
 /* print only colors */
-pre, code { 
+pre, code {
     color: #000;
 }
 a:link, a:visited, .cmt {
@@ -337,7 +337,7 @@ h3, h4, div.title, h2, a:link, a:visited, .cmt {
 pre {
     background-color: #090903;
 }
-pre, code { 
+pre, code {
     color: #ffc3ff;
 }
 a:hover, .pp {
@@ -421,7 +421,7 @@ The latest version of this document can be found at <a href="http://cb.vu/unixto
 Error reports and comments are most welcome - <a href="mailto:c\at\cb.vu">c@cb.vu</a> Colin Barschel.
 <p class="copyright">&#169; <a href="mailto:c_at_cb.vu">Colin Barschel</a> 2007-2011. <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Some rights reserved under Creative Commons</a>.
 </p>
-</div> 
+</div>
 <!-- The table of content is displayed as a fixed vertical right menu
   when viewed in a browser. When printed TOC is displayed on the front
   page as a classical table of content with page numbers -->
@@ -546,7 +546,7 @@ The following commands are useful to find out what is going on on the system.
 # rmuser joe                         <span class="cmt"># FreeBSD delete user joe (interactive)</span>
 # pw groupadd admin                  <span class="cmt"># Use pw on FreeBSD</span>
 # pw groupmod admin -m newmember     <span class="cmt"># Add a new member to a group</span>
-# pw useradd colin -c "Colin Barschel" -g admin -m -s /bin/tcsh 
+# pw useradd colin -c "Colin Barschel" -g admin -m -s /bin/tcsh
 # pw userdel colin; pw groupdel admin
 </pre>
 Encrypted passwords are stored in /etc/shadow for Linux and Solaris and /etc/master.passwd on FreeBSD. If the master.passwd is modified manually (say to delete a password), run <code># pwd_mkdb -p master.passwd</code> to rebuild the database.<br /><br />
@@ -614,7 +614,7 @@ set rlim_fd_cur = 1024               <span class="cmt"># Soft limit on file desc
 <h3>Linux</h3>
 Once booted, the kernel starts <code>init</code> which then starts <code>rc</code> which starts all scripts belonging to a runlevel. The scripts are stored in /etc/init.d and are linked into /etc/rc.d/rcN.d with N the runlevel number.<br />
 The default runlevel is configured in /etc/inittab. It is usually 3 or 5:
-<pre># grep default: /etc/inittab                                         
+<pre># grep default: /etc/inittab
 id:3:initdefault:
 </pre>
 The actual runlevel can be changed with <code>init</code>. For example to go from 3 to 5:
@@ -675,7 +675,7 @@ If, after booting, the root partition is mounted read only, remount it rw:
 # passwd                             <span class="cmt"># or delete the root password (/etc/shadow)</span>
 # sync; mount -o remount,ro /        <span class="cmt"># sync before to remount read only</span>
 # reboot
-</pre> 
+</pre>
 <h3>FreeBSD method 1</h3>
 On FreeBSD, boot in single user mode, remount / rw and use passwd. You can select the single user mode on the boot menu (option 4) which is displayed for 10 seconds at startup. The single user mode will give you a root shell on the / partition.
 <pre># mount -u /; mount -a               <span class="cmt"># will mount / rw</span>
@@ -722,7 +722,7 @@ Optionally update the source tree (in <code>/usr/src</code>) with csup (as of Fr
 <pre># csup &lt;supfile&gt;</pre>
 I use the following supfile:
 <pre>*default host=cvsup5.FreeBSD.org  # www.freebsd.org/handbook/cvsup.html#CVSUP-MIRRORS
-*default prefix=/usr 
+*default prefix=/usr
 *default base=/var/db
 *default release=cvs delete tag=RELENG_7
 src-all
@@ -804,7 +804,7 @@ FreeBSD uses <code>idprio/rtprio</code> (0 = max priority, 31 = most idle):
 <h2 id="bgfg">Background/Foreground</h2>
 When started from a shell, processes can be brought in the background and back to the foreground with [Ctrl]-[Z] (^Z), <code>bg</code> and <code>fg</code>. List the processes with <code>jobs</code>.
 <pre># ping cb.vu > ping.log
-^Z                                   <span class="cmt"># ping is suspended (stopped) with [Ctrl]-[Z]</span> 
+^Z                                   <span class="cmt"># ping is suspended (stopped) with [Ctrl]-[Z]</span>
 # bg                                 <span class="cmt"># put in background and continues running</span>
 # jobs -l                            <span class="cmt"># List processes in background</span>
 [1]  - 36232 Running                       ping cb.vu > ping.log
@@ -1205,7 +1205,7 @@ Use add -p to make the route persistent.
 <pre># ifconfig fxp0 inet 192.168.50.254/24                     <span class="cmt"># First IP</span>
 # ifconfig fxp0 alias 192.168.51.254 netmask 255.255.255.0 <span class="cmt"># Second IP</span>
 # ifconfig fxp0 -alias 192.168.51.254                      <span class="cmt"># Remove second IP alias</span>
-</pre>Permanent entries in /etc/rc.conf                   
+</pre>Permanent entries in /etc/rc.conf
 <pre>ifconfig_fxp0="inet 192.168.50.254  netmask 255.255.255.0"
 ifconfig_fxp0_alias0="192.168.51.254 netmask 255.255.255.0"
 </pre>
@@ -1308,7 +1308,7 @@ natd_interface="tun0"           <span class="cmt"># Public interface or IP addre
 natd_flags="-s -m -u -dynamic -f /etc/natd.conf"
 </pre>
 Port forward with:
-<pre># cat /etc/natd.conf 
+<pre># cat /etc/natd.conf
 same_ports yes
 use_sockets yes
 unregistered_only
@@ -1400,7 +1400,7 @@ Yes it is a good idea to rename you adapter with simple names!
 
 
 <h2 id="traffic">Traffic analysis</h2>
-<a href="http://people.suug.ch/~tgr/bmon/">Bmon</a><span class="fn">http://people.suug.ch/~tgr/bmon/</span> is a small console bandwidth monitor and can display the flow on different interfaces. 
+<a href="http://people.suug.ch/~tgr/bmon/">Bmon</a><span class="fn">http://people.suug.ch/~tgr/bmon/</span> is a small console bandwidth monitor and can display the flow on different interfaces.
 <h3>Sniff with tcpdump</h3>
 <pre># tcpdump -nl -i bge0 not port ssh and src \(192.168.16.121 or 192.168.16.54\)
 # tcpdump -n -i eth1 net 192.168.16.121           <span class="cmt"># select to/from a single IP</span>
@@ -1480,7 +1480,7 @@ The tc filter defines the port range with port and mask which you have to calcul
 
 <h4>FreeBSD</h4>
 The max link bandwidth is 500Kbit/s and we define 3 queues with priority 100:10:1 for VoIP:ssh:all the rest.
-<pre># ipfw pipe 1 config bw 500Kbit/s 
+<pre># ipfw pipe 1 config bw 500Kbit/s
 # ipfw queue 1 config pipe 1 weight 100
 # ipfw queue 2 config pipe 1 weight 10
 # ipfw queue 3 config pipe 1 weight 1
@@ -1575,7 +1575,7 @@ The non commercial version of the ssh.com client can be downloaded the main ftp 
 
 <i>Notice:</i> We used a DSA key, RSA is also possible. The key is not protected by a password.
 <h3>Using putty for Windows</h3>
-<a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">Putty</a><span class="fn">http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html</span> is a simple and free ssh client for Windows. 
+<a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">Putty</a><span class="fn">http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html</span> is a simple and free ssh client for Windows.
 <ul>
   <li>Create a key pair with the puTTYgen program.</li>
   <li>Save the public and private keys (for example into C:\Documents and Settings\%USERNAME%\.ssh).</li>
@@ -1842,7 +1842,7 @@ Sudo is a standard way to give users some administrative rights without giving o
 </pre>
 <h2>Configuration</h2>
 Sudo is configured in <code>/etc/sudoers</code> and must only be edited with <code>visudo</code>. The basic syntax is (the lists are comma separated):
-<pre>user hosts = (runas) commands          <span class="cmt"># In /etc/sudoers</span></pre>        
+<pre>user hosts = (runas) commands          <span class="cmt"># In /etc/sudoers</span></pre>
 <ul style="list-style-type:none; page-break-inside:avoid;">
   <li><code>users</code> one or more users or %group (like %wheel) to gain the rights</li>
   <li><code>hosts</code> list of hosts (or ALL)</li>
@@ -1876,7 +1876,7 @@ sysadmin     ALL,!DMZ = (ALL) NOPASSWD: ALL   <span class="cmt"># Can do anythin
 
 <span class="cmt"># anyone can mount/unmount a cd-rom on the desktop machines</span>
 ALL          DESKTOP = NOPASSWD: /sbin/mount /cdrom,/sbin/umount /cdrom
-</pre> 
+</pre>
 
 </div>
 
@@ -1888,12 +1888,12 @@ Encrypt and decrypt:
 # openssl aes-128-cbc -d -salt -in file.aes -out file
 </pre>
 Note that the file can of course be a tar archive.
-    
+
 <h3>tar and encrypt a whole directory</h3>
 <pre># tar -cf - directory | openssl aes-128-cbc -salt -out directory.tar.aes      <span class="cmt"># Encrypt</span>
 # openssl aes-128-cbc -d -salt -in directory.tar.aes | tar -x -f -            <span class="cmt"># Decrypt</span>
 </pre>
-    
+
 <h3>tar zip and encrypt a whole directory</h3>
 <pre># tar -zcf - directory | openssl aes-128-cbc -salt -out directory.tar.gz.aes  <span class="cmt"># Encrypt</span>
 # openssl aes-128-cbc -d -salt -in directory.tar.gz.aes | tar -xz -f -        <span class="cmt"># Decrypt</span>
@@ -2407,7 +2407,7 @@ The editors <code>nano</code> and <code>pico</code> are usually available too an
 The <code>mail</code> command is a basic application to read and send email, it is usually installed. To send an email simply type "mail user@domain". The first line is the subject, then the mail content. Terminate and send the email with a single dot (.) in a new line. Example:
 <pre># mail c@cb.vu
 Subject: Your text is full of typos
-"For a moment, nothing happened. Then, after a second or so, 
+"For a moment, nothing happened. Then, after a second or so,
 nothing continued to happen."
 .
 EOT
@@ -2435,7 +2435,7 @@ Only include one (or two) directories from a tree, but keep the relative structu
 # tar -xf home.tar              <span class="cmt"># extract the archive here (x for extract)</span>
 # tar -xzf home.tgz             <span class="cmt"># same with zip compression (-xjf for bzip2 compression)</span>
                                 <span class="cmt"># remove leading path gallery2 and extract into gallery</span>
-# tar --strip-components 1 -zxvf gallery2.tgz -C gallery/ 
+# tar --strip-components 1 -zxvf gallery2.tgz -C gallery/
 # tar -xjf home.tbz home/colin/file.txt    <span class="cmt"># Restore a single file</span>
 </pre>
 <h3>More advanced</h3>
@@ -2560,7 +2560,7 @@ Some important options:
 # find . -size +10M -size -50M -print
 # find /usr/ports/ -name work -type d -print -exec rm -rf {} \;  <span class="cmt"># Clean the ports</span>
       <span class="cmt"># Find files with SUID; those file are vulnerable and must be kept secure</span>
-# find / -type f -user root -perm -4000 -exec ls -l {} \; 
+# find / -type f -user root -perm -4000 -exec ls -l {} \;
 </pre>
 Be careful with xarg or exec as it might or might not honor quotings and can return wrong results when files or directories contain spaces. In doubt use "-print0 | xargs -0" instead of "| xargs". The option -print0 must be the last in the find command. See this nice <a href="http://www.hccfl.edu/pollock/Unix/FindCmd.htm">mini tutorial for find</a><span class="fn">http://www.hccfl.edu/pollock/Unix/FindCmd.htm</span>.
 <pre># find . -type f | xargs ls -l       <span class="cmt"># Will not work with spaces in names</span>
@@ -2648,7 +2648,7 @@ The &lt;cdrom&gt; path is usually <code>/cdrom/cdrom0</code>.
 # pkg_delete /var/db/pkg/rsync-xx    <span class="cmt"># Delete the rsync package</span>
 </pre>
 Set where the packages are fetched from with the <code>PACKAGESITE</code> variable. For example:
-<pre># export PACKAGESITE=ftp://ftp.freebsd.org/pub/FreeBSD/ports/i386/packages/Latest/ 
+<pre># export PACKAGESITE=ftp://ftp.freebsd.org/pub/FreeBSD/ports/i386/packages/Latest/
 # or ftp://ftp.freebsd.org/pub/FreeBSD/ports/i386/packages-6-stable/Latest/
 </pre>
 <h3>FreeBSD <a href="http://www.freebsd.org/handbook/ports.html">ports</a><span class="fn">http://www.freebsd.org/handbook/ports.html</span></h3>
@@ -2984,7 +2984,7 @@ The emacs mode enables to use the emacs keys shortcuts to modify the command pro
   <li>M-f &#160; &#160; &#160; Move cursor forward one word</li>
   <li>M-d &#160; &#160; &#160; Cut the next word</li>
   <li>C-w &#160; &#160; &#160; Cut the last word</li>
-  <li>C-u &#160; &#160; &#160; Cut everything before the cursor</li> 
+  <li>C-u &#160; &#160; &#160; Cut everything before the cursor</li>
   <li>C-k &#160; &#160; &#160; Cut everything after the cursor (rest of the line)</li>
   <li>C-y &#160; &#160; &#160; Paste the last thing to be cut (simply paste)</li>
   <li>C-_ &#160; &#160; &#160; Undo</li>
@@ -3008,7 +3008,7 @@ TWOPI=`echo "$PI * 2" | bc -l`               <span class="cmt"># Use bc for floa
 ZERO=`echo "c($PI/4)-sqrt(2)/2" | bc -l`
 </pre>
 The command line arguments are
-<pre>$0, $1, $2, ...                              <span class="cmt"># $0 is the command itself</span> 
+<pre>$0, $1, $2, ...                              <span class="cmt"># $0 is the command itself</span>
 $#                                           <span class="cmt"># The number of arguments</span>
 $*                                           <span class="cmt"># All arguments (also $@)</span>
 </pre>
@@ -3158,7 +3158,7 @@ A minimal c program simple.c:
 <pre><span class="pp">#include</span> &lt;stdio.h&gt;
 main() {
     <span class="keyword">int</span> number=42;
-    printf(&quot;The answer is %i\n&quot;, number);  
+    printf(&quot;The answer is %i\n&quot;, number);
 }
 </pre>
 Compile with:
@@ -3229,7 +3229,7 @@ string IPv4::IPint_to_IPquad(<span class="keyword">unsigned</span> <span class="
 Compile and execute with:
 <pre style="page-break-before:avoid;"># g++ -c IPv4.cpp simplecpp.cpp                <span class="cmt"># Compile in objects</span>
 # g++ IPv4.o simplecpp.o -o simplecpp.exe      <span class="cmt"># Link the objects to final executable</span>
-# ./simplecpp.exe 
+# ./simplecpp.exe
 1347861486 = 80.86.187.238
 </pre>
 Use <code>ldd</code> to check which libraries are used by the executable and where they are located. Also used to check if a shared library is missing or if the executable is static.
